@@ -1,0 +1,30 @@
+name: magic
+recipe: drupal8
+config:
+  webroot: web
+  via: nginx
+env_file:
+  - .env
+proxy:
+  node:
+    - bs-magic.lndo.site:3000
+services:
+  node:
+    type: node
+    ssl: true
+    sslExpose: false
+    command: cd /app/web/themes/custom/magic && yarn watch
+    build:
+      - cd /app/web/themes/custom/magic && yarn install
+      - cd /app/web/themes/custom/magic && yarn dev
+    overrides:
+      ports:
+        - 3000:3000
+  appserver:
+    overrides:
+      environment:
+        MYSQL_HOSTNAME: database
+        MYSQL_PASSWORD: drupal8
+        MYSQL_DATABASE: drupal8
+        MYSQL_USER: drupal8
+        MYSQL_PORT: 3306

@@ -1,0 +1,5 @@
+# Schema for the configuration files of the bls theme.
+
+bls.settings:
+  type: theme_settings
+  label: 'bls settings'
