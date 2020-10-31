@@ -13,7 +13,7 @@ const glob = require('glob')
 const mix = require('laravel-mix');
 const proxy = require('./config/config.js');
 require('laravel-mix-copy-watched');
-require('laravel-mix-criticalcss');
+//require('laravel-mix-criticalcss');
 
 /*
  |--------------------------------------------------------------------------
@@ -84,16 +84,3 @@ mix.copyDirectoryWatched('src/fonts/**/*', 'assets/fonts');
  * Critical CSS
  |--------------------------------------------------------------------------
  */
-mix.criticalCss({
-  enabled: mix.inProduction(),
-  paths: {
-    base: proxy.proxy,
-    templates: './assets/css/critical/',
-  },
-  urls: [
-    { url: '/', template: 'front' },
-  ],
-  options: {
-    minify: true,
-  },
-});

@@ -1,0 +1,22 @@
+{
+    "/components/block/block.js": "/components/block/block.js",
+    "/components/button/button.js": "/components/button/button.js",
+    "/components/navbar/navbar.js": "/components/navbar/navbar.js",
+    "/components/node/node.js": "/components/node/node.js",
+    "/js/main.script.js": "/js/main.script.js",
+    "/css/main.style.css": "/css/main.style.css",
+    "/components/block/block.css": "/components/block/block.css",
+    "/components/breadcrumb/breadcrumb.css": "/components/breadcrumb/breadcrumb.css",
+    "/components/button/button.css": "/components/button/button.css",
+    "/components/dropdown/dropdown.css": "/components/dropdown/dropdown.css",
+    "/components/logo/logo.css": "/components/logo/logo.css",
+    "/components/nav/nav.css": "/components/nav/nav.css",
+    "/components/navbar/navbar.css": "/components/navbar/navbar.css",
+    "/components/node/node.css": "/components/node/node.css",
+    "/components/page/page.css": "/components/page/page.css",
+    "/components/section/section.css": "/components/section/section.css",
+    "/components/title/title.css": "/components/title/title.css",
+    "/images/README.md": "/images/README.md",
+    "/icons/README.md": "/icons/README.md",
+    "/fonts/README.md": "/fonts/README.md"
+}
