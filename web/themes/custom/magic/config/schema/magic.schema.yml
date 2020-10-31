@@ -1,5 +1,0 @@
-# Schema for the configuration files of the magic theme.
-
-magic.settings:
-  type: theme_settings
-  label: 'magic settings'
