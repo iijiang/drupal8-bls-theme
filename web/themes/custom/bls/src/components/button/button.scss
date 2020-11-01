@@ -1,1 +1,15 @@
 @import "../../sass/init";
+@import "~bootstrap/scss/buttons";
+
+
+.btn-custom-grey {
+  @extend .btn;
+  @extend .btn-primary;
+   background-color: green;
+   border-radius: 0;
+   border-top: solid 4px $green;
+  &:focus,
+  &:hover {
+    background-color: $green;
+  }
+}

@@ -27,3 +27,17 @@ export const button_secondary = () => {
     value: "Secondary Button"
   })
 };
+
+export const button_success = () =>
+  button({
+    attributes: new drupalAttribute(),
+    type: "success",
+    value: "Success Button"
+  });
+
+export const button_custom_grey = () =>
+  button({
+    attributes: new drupalAttribute(),
+    type: "custom-grey",
+    value: "Custom Grey"
+  });
